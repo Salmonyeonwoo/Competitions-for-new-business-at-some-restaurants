@@ -96,13 +96,13 @@ if urgent_cases > 0:
         st.subheader("📹 추천 영상 교육 자료")
         # [수정됨] 다시 인터넷 임시 이미지 주소(placehold.co) 사용
         if top_issue == '서비스 태도':
-            st.image(r"C:\Users\Admin\Downloads\Basic_Service_Manner.jpg", caption="▶️ [필수 시청] 고객 감동을 부르는 기본 응대 매뉴얼 (3분)")
+            st.image("AI 이미지 사진 파일들/Basic_Service_Manner.jpg", caption="▶️ [필수 시청] 고객 감동을 부르는 기본 응대 매뉴얼 (3분)")
         elif top_issue == '매장 청결':
-            st.image(r"C:\Users\Admin\Downloads\table_cleaning.png", caption="▶️ [필수 시청] 피크타임 테이블 정리 표준 요령 (2분)")
+            st.image("AI 이미지 사진 파일들/General_Guide.jpg", caption="▶️ [필수 시청] 피크타임 테이블 정리 표준 요령 (2분)")
         elif top_issue == '주문 실수':
-            st.image(r"C:\Users\Admin\Downloads\pos_training.png", caption="▶️ [필수 시청] 주문 실수 '0'를 위한 포스기 조작법 (4분)")
+            st.image("AI 이미지 사진 파일들/table_cleaning.png", caption="▶️ [필수 시청] 주문 실수 '0'를 위한 포스기 조작법 (4분)")
         else:
-            st.image(r"C:\Users\Admin\Downloads\General_Guide.jpg", caption="▶️ 기본 매장 운영 가이드")
+            st.image("AI 이미지 사진 파일들/pos_training.png", caption="▶️ 기본 매장 운영 가이드")
         st.info("👆 클릭하면 본사 교육 서버의 영상으로 연결됩니다. (프로토타입)")
 
     with col_edu2:
@@ -111,9 +111,9 @@ if urgent_cases > 0:
         with st.expander("🖨️ 사진 매뉴얼 보기 및 인쇄 (클릭)"):
             # [수정됨] placehold.co 서비스 사용
             if top_issue == '매장 청결':
-                st.image(r"C:\Users\Admin\Downloads\Other_cleaning.jpg", caption="[청결 표준] 테이블 정리 3단계")
+                st.image("AI 이미지 사진 파일들/Other_cleaning.jpg", caption="[청결 표준] 테이블 정리 3단계")
             elif top_issue == '서비스 태도':
-                st.image(r"C:\Users\Admin\Downloads\Other_service_manner.jpg", caption="[서비스 표준] 고객 응대 3대 요소")
+                st.image("AI 이미지 사진 파일들/Other_service_manner.jpg", caption="[서비스 표준] 고객 응대 3대 요소")
             else:
                  st.write("해당 유형의 표준 사진 매뉴얼을 준비 중입니다.")
         st.success("✅ 점주님! 이 자료를 이번 주 스태프 미팅 때 활용해 보세요.")
@@ -127,4 +127,5 @@ st.info("""
 1.  **데이터의 시각화:** 막연한 감이 아닌, 실제 데이터로 매장의 문제점을 진단합니다.
 2.  **Actionable Insight (실행 가능한 통찰):** 단순히 문제만 보여주는 것이 아니라, **'그래서 무엇을 교육해야 하는지'** 시청각 자료로 즉시 해결책을 제시합니다.
 3.  **프랜차이즈 표준화:** 본사의 우수한 교육 자료(영상/사진)를 데이터 기반으로 적재적소에 배포하여, 전 지점의 서비스 품질을 상향 평준화합니다.
+
 """)
